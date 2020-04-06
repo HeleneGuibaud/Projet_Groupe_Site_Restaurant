@@ -39,3 +39,34 @@
 .navbar ul li a:hover {
     color: #37A1AF;
 }
+
+@font-face{
+    font-family : "Lucida_Handwriting";
+    src : url('fonts/Lucida_Handwriting_.TTF');
+}
+#contact {
+    height: 100vh;
+}
+.map iframe {
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    margin: auto
+}
+#contact h3 {
+    font-family: "Lucida_Handwriting";
+    font-size: 2rem;
+    color: #000000;
+    margin-left: 5vw;
+}
+.co {
+    width: 49%;
+    display: flex;
+}
+.reservation {
+    width: 49%;
+    display: flex;
+}
+.top {
+    width: 99vw;
+}
