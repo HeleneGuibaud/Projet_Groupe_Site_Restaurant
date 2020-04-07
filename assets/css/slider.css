@@ -43,11 +43,10 @@
     }
   }
   
-  body {
+  #bodycarousel {
     max-width: 37.5rem;
     margin: 0 auto;
     padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
   }
   
   * {
@@ -230,27 +229,27 @@
   
 
 #carousel__slide1 {
-    background-image: url(assets/img/dolma.jpg);
+    background-image: url(../img/dolma.jpg);
 
 }
 
 #carousel__slide2 {
-    background-image: url(assets/img/ratatouilledubled.jpg);
+    background-image: url(../img/ratatouilledubled.jpg);
 }
 
 #carousel__slide3 {
-    background-image: url(assets/img/bourek.jpg);
+    background-image: url(../img/bourek.jpg);
 }
 
 #carousel__slide4 {
-    background-image: url(assets/img/couscousveggie.jpg);
+    background-image: url(../img/couscousveggie.jpg);
 }
 
 #carousel__slide5 {
-    background-image: url(assets/img/tajine.jpg);
+    background-image: url(../img/tajine.jpg);
 }
 
 #carousel__slide6 {
-    background-image: url(assets/img/pleindeplats.jpg);
+    background-image: url(../img/pleindeplats.jpg);
 }
 
