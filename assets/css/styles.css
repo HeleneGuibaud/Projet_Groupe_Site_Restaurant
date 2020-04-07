@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Lucida_Handwriting";
-  src: url(../font/LucidaHandwriting.TTF')
+  src: url('../font/LucidaHandwriting.TTF')
 }
 
 #container {
@@ -15,6 +15,8 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 0.5rem 0.5rem;
   line-height: 1.8rem;
+
+  margin-bottom: 10rem;
 }
 
 body {
@@ -28,6 +30,7 @@ body {
   height: 50px;
   width: 100%;
   position: fixed;
+  background-color: #37A1AF;
 }
 
 .nav>.nav-header {
@@ -47,10 +50,9 @@ body {
 
 .nav>.nav-links>a {
   display: inline-block;
-  padding: 13px 20px 13px 10px;
+  padding: 20px 20px 13px 10px;
   text-decoration: none;
-  color: #000;
-  margin-right: 10px;
+  color: #fff;
 }
 
 .nav>.nav-links>a:hover {
@@ -79,14 +81,14 @@ body {
   }
 
   .nav #nav-check:checked~.nav-btn>label {
-    background-color: #FEF3D6
+    background-color: #37A1AF
   }
 
   .nav>.nav-btn>label>span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #000;
+    border-top: 2px solid #fff;
   }
 
   .nav>.nav-links {
@@ -94,7 +96,7 @@ body {
     display: block;
     text-align: center;
     width: 100%;
-    background-color: #FEF3D6;
+    background-color: #37A1AF;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -137,7 +139,7 @@ section#home h1 {
 section#home h2 {
   font-family: "Lucida_Handwriting";
   font-size: 2rem;
-  margin-top: -1.2rem;
+  margin-top: -2rem;
   text-align: center;
 
 }
@@ -145,35 +147,51 @@ section#home h2 {
 section#home p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  margin-left: 0rem;
   text-align: center;
 }
 
 img {
   max-width: 89%;
-  height: auto;
+  height: 100vh;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
-
 }
 
-/* CONTACT */
+#icones {
+  grid-column: 5 / 6;
+  grid-row: 2;
+  text-align: right;
+  margin-top: -2.5rem;
+  padding-right: 3rem;
+  transform: rotate(90deg);
+}
+
+#icones i {
+  margin: 1rem;
+  color: #E1A545;
+  
+}
+
+
+/*////////// CONTACT //////////*/
+
 #contact {
   margin-top: 5vh;
-  height: 100vh;
+  height: 100%;
   margin-bottom: 5vh;
+  display: block;
 }
 .map iframe {
   width: 70vw;
   height: 40vh;
   display: flex;
   margin: auto;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 #contact h3 {
   font-family: "Lucida_Handwriting";
   font-size: 2rem;
-  color: #000000;
+  color: #ffffff;
   margin-left: 5vw;
   margin-bottom: 2rem;
 }
@@ -192,7 +210,8 @@ img {
 }
 .adress,
 .tel,
-.messenger {
+.messenger,
+.hours {
   margin: 1rem;
 }
 #contact img {
@@ -201,13 +220,13 @@ img {
 }
 #contact p {
   font-family: 'Open Sans', sans-serif;
-  margin: auto;
 }
 form {
-  padding: 1rem;
-  border: 1px solid #707070;
+  padding: 1rem 3rem 1rem 3rem;
+  border: 1px solid #E1A545;
+  border-bottom: none;
 }
-li {
+#contact li {
   list-style: none;
   font-family: 'Open Sans', sans-serif;
   margin: 1rem;
@@ -220,6 +239,38 @@ li {
 }
 label {
   display: block
+}
+#contact .title {
+  background-color: #37A1AF;
+  width: 35vw;
+}
+.open {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #E1A545;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+p#time {
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+}
+p#day {
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+}
+.fa, .fas, .fab {
+  font-weight: 900;
+  color: #37A1AF;
+  width: 2rem;
+  margin: auto;
+}
+button {
+  margin: 1rem;
+  color: white;
+  border: none;
+  background-color: #37A1AF;
+  padding: 0.5rem;
 }
 
 /* NEWSLETTER */
