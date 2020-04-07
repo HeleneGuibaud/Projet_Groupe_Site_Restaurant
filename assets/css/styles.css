@@ -29,6 +29,7 @@ body {
   width: 100%;
   position: fixed;
   background-color: #37A1AF;
+  z-index: 2;
 }
 
 .nav>.nav-header {
@@ -150,7 +151,7 @@ section#home p {
 
 img {
   max-width: 89%;
-  height: 100vh;
+  height: auto;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
@@ -384,7 +385,7 @@ button {
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
   }
 }
 .social-icons
