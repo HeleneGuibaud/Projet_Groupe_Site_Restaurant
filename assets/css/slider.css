@@ -2,12 +2,15 @@
 main{
   position: relative;
 }
+#carouselsize{
+  width: 80%;
+}
 
 .carousel-snapper{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 80%%;
   height: 100%;
   scroll-snap-align: center;
 }
