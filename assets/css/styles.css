@@ -15,8 +15,6 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 0.5rem 0.5rem;
   line-height: 1.8rem;
-
-  margin-bottom: 10rem;
 }
 
 body {
@@ -30,7 +28,6 @@ body {
   height: 50px;
   width: 100%;
   position: fixed;
-  background-color: #37A1AF;
 }
 
 .nav>.nav-header {
@@ -50,9 +47,10 @@ body {
 
 .nav>.nav-links>a {
   display: inline-block;
-  padding: 20px 20px 13px 10px;
+  padding: 13px 20px 13px 10px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
+  margin-right: 10px;
 }
 
 .nav>.nav-links>a:hover {
@@ -81,14 +79,14 @@ body {
   }
 
   .nav #nav-check:checked~.nav-btn>label {
-    background-color: #37A1AF
+    background-color: #FEF3D6
   }
 
   .nav>.nav-btn>label>span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #000;
   }
 
   .nav>.nav-links {
@@ -96,7 +94,7 @@ body {
     display: block;
     text-align: center;
     width: 100%;
-    background-color: #37A1AF;
+    background-color: #FEF3D6;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -139,7 +137,7 @@ section#home h1 {
 section#home h2 {
   font-family: "Lucida_Handwriting";
   font-size: 2rem;
-  margin-top: -2rem;
+  margin-top: -1.2rem;
   text-align: center;
 
 }
@@ -147,34 +145,19 @@ section#home h2 {
 section#home p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1rem;
+  margin-left: 0rem;
   text-align: center;
 }
 
 img {
   max-width: 89%;
-  height: 100vh;
+  height: auto;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+
 }
 
-#icones {
-  grid-column: 5 / 6;
-  grid-row: 2;
-  text-align: right;
-  margin-top: -2.5rem;
-  padding-right: 3rem;
-  transform: rotate(90deg);
-}
-
-#icones i {
-  margin: 1rem;
-  color: #E1A545;
-  
-}
-
-
-/*////////// CONTACT //////////*/
-
+/* CONTACT */
 #contact {
   margin-top: 5vh;
   height: 100%;
