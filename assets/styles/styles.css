@@ -10,12 +10,9 @@
 .container {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0.5rem 0.5rem;
   line-height: 1.8rem;
 }
+
 
 body {
   margin: 0px;
@@ -43,6 +40,7 @@ body {
   float: right;
   font-size: 0.8rem;
   text-transform: uppercase;
+  font-family: "Lucida_Handwriting";
 }
 
 .nav>.nav-links>a {
@@ -120,17 +118,24 @@ body {
 /*////////////////// SECTION-ACCUEIL //////////////////*/
 
 section#home {
-  grid-column: 3 / 6;
-  grid-row: 2;
-  text-align: left;
-
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0.5rem 0.5rem;
 }
+
 
 section#home h1 {
   font-family: "Lucida_Handwriting";
   font-size: 6rem;
   color: #E1A545;
   text-align: center;
+  line-height: 1.8rem;
+  grid-column: 3 / 6;
+  grid-row: 2;
+
 
 }
 
@@ -139,6 +144,9 @@ section#home h2 {
   font-size: 2rem;
   margin-top: -1.2rem;
   text-align: center;
+  line-height: 1.8rem;
+  grid-column: 3 / 6;
+  grid-row: 3 / 4;
 
 }
 
@@ -147,7 +155,10 @@ section#home p {
   font-size: 1rem;
   margin-left: 0rem;
   text-align: center;
+  grid-column: 3 / 6;
+  grid-row: 4 / 6;
 }
+
 
 img {
   max-width: 89%;
@@ -157,7 +168,11 @@ img {
 
 }
 
-/*///////////////// CAROUSEL ///////////////////////*/
+/* Carousel */
+
+.carousel {
+  width: 50%;
+}
 
 @keyframes tonext {
   75% {
@@ -204,12 +219,7 @@ img {
   }
 }
 
-body {
-  max-width: 37.5rem;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  font-family: 'Lato', sans-serif;
-}
+
 
 * {
   box-sizing: border-box;
@@ -414,3 +424,4 @@ ol, li {
 #carousel__slide6 {
   background-image: url(assets/img/pleindeplats.jpg);
 }
+
