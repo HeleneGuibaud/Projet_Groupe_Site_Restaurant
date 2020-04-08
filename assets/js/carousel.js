@@ -41,8 +41,8 @@
     function applyEventListenersToClass(className) {
         Array.from( document.getElementsByClassName( className ) )
             .forEach( function( $lnk ) {
-                $lnk.preventDefault
-                $lnk.addEventListener( "click", function() {
+                $lnk.addEventListener( "click", function(e) {
+                    e.preventDefault();
                     displaySlide( $lnk.href.split('#')[1] );
                 } );
             } );
