@@ -18,7 +18,7 @@ main {
 .carousel-prev,
 .carousel-next {
   position: absolute;
-  top: 0;
+  top: 22rem;
   margin-top: 0%;
   width: 4rem;
   height: 4rem;
@@ -79,6 +79,7 @@ main {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
+  top: 15rem;
   background-color: #37A1AF;
   background-clip: content-box;
   border: 0.25rem solid transparent;
@@ -135,7 +136,7 @@ main {
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: #37A1AF;
+    background-color: #E1A545;
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
