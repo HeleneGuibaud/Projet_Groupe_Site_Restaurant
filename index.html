@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -19,9 +20,9 @@
     </div>
     <div class="nav-btn">
       <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
+        <b></b>
+        <b></b>
+        <b></b>
       </label>
     </div>
 
@@ -69,7 +70,7 @@
         </div>
         <div class="pres">
           <p>Dellys Bar à Couscous vous propose un concept innovant qui met à l'honneur des recettes tout droit venues du Maghreb.</p>
-          <p>Des plats équilibrés et riches en saveurs, emblématiques et du régime méditerranéen.</p>
+          <p>Des plats équilibrés et riches en saveurs, emblématiques de la cuisine locale.</p>
           <p>Il est cuisiné sous de multiples déclinaisons régionales et culturelles locales.</p>
         </div>
       </div>
@@ -80,80 +81,204 @@
 
 
   <!----- CAROUSEL ------>
-  <div id="bodycarousel">
-    <section class="carousel" aria-label="Gallery">
-      <ol class="carousel__viewport">
-        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper">
-            <a href="#carousel__slide6" class="carousel__prev">Go to last slide</a>
-            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-          </div>
-        </li>
-        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide5" class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide5" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide4" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide6" class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide6" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide5" class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-        </li>
-      </ol>
-      <aside class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 5</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide6" class="carousel__navigation-button">Go to slide 6</a>
-          </li>
-        </ol>
-      </aside>
-    </section>
-  </div>
+  <main id="carou">
+    <h1>Menu</h1>
+      <div class="carousel">
+        <section class="carousel-viewport">
+            <article id="carousel-slide-1" class="carousel-slide">
+                <h2>Bourek</h2>
+                <img src="./assets/img/bourek.jpg" title="Le bon Bourek" />
+                <div>
+                    <h3>Description:</h3>
+                    <p>Bourek description</p>
+                    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                </div>
+                <div>
+                    <h3>Ingrédients</h3>
+                    <ul>
+                        <li>Du Sel</li>
+                        <li>Du Poivre</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Des Pommes</li>
+                        <li>Des Poires</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Ma Bite</li>
+                        <li>Mon Zboub</li>
+                        <li>Des Scoubidoubidous</li>
+                    </ul>
+                </div>
+                <div class="carousel-snapper">
+                    <a href="#carousel-slide-6" class="carousel-prev">Go to last slide</a>
+                    <a href="#carousel-slide-2" class="carousel-next">Go to next slide</a>
+                </div>
+            </article>
 
-  <!-- newsletter -->
-  <h3 id="newsletter">NEWSLETTER</h3>
-  <img id="deliveryPic" src="assets/img/dellys-bar-a-couscous-20180808_115902.jpg" alt="devanture du restaurant" />
-  <section>
-    <div class="deliveryForm">
-      <p id="order">Inscription</p>
-      <p><label for="name">Nom,Prénom</label></p>
-      <input type="text" id="name" name="name" placeholder="EX:DUPONT" required />
-      <p><label for="mail">Adresse email</label></p>
-      <input type="email" id="mail" name="mail" placeholder="exemple@domaine.com" required />
-      <p><label for="phone">Téléphone</label></p>
-      <input type="text" id="phone" name="phone" placeholder="EX:0601010101" required maxlength="10" minlength="10" />
+            <article id="carousel-slide-2" class="carousel-slide">
+                <h2>Couscous Veggie</h2>
+                <img src="./assets/img/couscousveggie.jpg" title="Couscous Veggie" />
+                <div>
+                    <h3>Description:</h3>
+                    <p>Couscous description</p>
+                    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                </div>
+                <div>
+                    <h3>Ingrédients</h3>
+                    <ul>
+                        <li>Du Sel</li>
+                        <li>Du Poivre</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Des Pommes</li>
+                        <li>Des Poires</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Ma Bite</li>
+                        <li>Mon Zboub</li>
+                        <li>Des Scoubidoubidous</li>
+                    </ul>
+                </div>
+                <div class="carousel-snapper">
+                    <a href="#carousel-slide-1" class="carousel-prev">Go to previous slide</a>
+                    <a href="#carousel-slide-3" class="carousel-next">Go to next slide</a>
+                </div>
+            </article>
+
+            <article id="carousel-slide-3" class="carousel-slide">
+                <h2>Dolma</h2>
+                <img src="./assets/img/dolma.jpg" title="Dolma" />
+                <div>
+                    <h3>Description:</h3>
+                    <p>Dolma description</p>
+                    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                </div>
+                <div>
+                    <h3>Ingrédients</h3>
+                    <ul>
+                        <li>Du Sel</li>
+                        <li>Du Poivre</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Des Pommes</li>
+                        <li>Des Poires</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Ma Bite</li>
+                        <li>Mon Zboub</li>
+                        <li>Des Scoubidoubidous</li>
+                    </ul>
+                </div>
+                <div class="carousel-snapper">
+                    <a href="#carousel-slide-2" class="carousel-prev">Go to previous slide</a>
+                    <a href="#carousel-slide-4" class="carousel-next">Go to next slide</a>
+                </div>
+            </article>
+
+            <article id="carousel-slide-4" class="carousel-slide">
+                <h2>Plein de Plats</h2>
+                <img src="./assets/img/pleindeplats.jpg" title="Plein de Plats" />
+                <div>
+                    <h3>Description:</h3>
+                    <p>Vegans can suck my bacon.</p>
+                    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                </div>
+                <div>
+                    <h3>Ingrédients</h3>
+                    <ul>
+                        <li>Du Sel</li>
+                        <li>Du Poivre</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Des Pommes</li>
+                        <li>Des Poires</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Ma Bite</li>
+                        <li>Mon Zboub</li>
+                        <li>Des Scoubidoubidous</li>
+                    </ul>
+                </div>
+                <div class="carousel-snapper">
+                    <a href="#carousel-slide-3" class="carousel-prev">Go to previous slide</a>
+                    <a href="#carousel-slide-5" class="carousel-next">Go to next slide</a>
+                </div>
+            </article>
+
+            <article id="carousel-slide-5" class="carousel-slide">
+                <h2>Ratatouille du Bled</h2>
+                <img src="./assets/img/ratatouilledubled.jpg" title="Ratatouille du Bled" />
+                <div>
+                    <h3>Description:</h3>
+                    <p>Ratatouille description</p>
+                    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                </div>
+                <div>
+                    <h3>Ingrédients</h3>
+                    <ul>
+                        <li>Du Sel</li>
+                        <li>Du Poivre</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Des Pommes</li>
+                        <li>Des Poires</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Ma Bite</li>
+                        <li>Mon Zboub</li>
+                        <li>Des Scoubidoubidous</li>
+                    </ul>
+                </div>
+                <div class="carousel-snapper">
+                    <a href="#carousel-slide-4" class="carousel-prev">Go to previous slide</a>
+                    <a href="#carousel-slide-6" class="carousel-next">Go to last slide</a>
+                </div>
+            </article>
+
+            <article id="carousel-slide-6" class="carousel-slide">
+                <h2>Tajine</h2>
+                <img src="./assets/img/tajine.jpg" title="Tajine" />
+                <div>
+                    <h3>Description:</h3>
+                    <p>Tajine description.</p>
+                    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+                </div>
+                <div>
+                    <h3>Ingrédients</h3>
+                    <ul>
+                        <li>Du Sel</li>
+                        <li>Du Poivre</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Des Pommes</li>
+                        <li>Des Poires</li>
+                        <li>Des Scoubidoubidous</li>
+                        <li>Ma Bite</li>
+                        <li>Mon Zboub</li>
+                        <li>Des Scoubidoubidous</li>
+                    </ul>
+                </div>
+                <div class="carousel-snapper">
+                    <a href="#carousel-slide-5" class="carousel-prev">Go to previous slide</a>
+                    <a href="#carousel-slide-1" class="carousel-next">Go to first slide</a>
+                </div>
+            </article>
+
+            <aside class="carousel-navigation">
+                <ol class="carousel-navigation-list">
+                    <li class="carousel-navigation-item">
+                        <a href="#carousel-slide-1" class="carousel-navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel-navigation-item">
+                        <a href="#carousel-slide-2" class="carousel-navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel-navigation-item">
+                        <a href="#carousel-slide-3" class="carousel-navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel-navigation-item">
+                        <a href="#carousel-slide-4" class="carousel-navigation-button">Go to slide 4</a>
+                    </li>
+                    <li class="carousel-navigation-item">
+                        <a href="#carousel-slide-5" class="carousel-navigation-button">Go to slide 5</a>
+                    </li>
+                    <li class="carousel-navigation-item">
+                        <a href="#carousel-slide-6" class="carousel-navigation-button">Go to slide 6</a>
+                    </li>
+                </ol>
+            </aside>
+        </section>
     </div>
-  </section>
+</main>
+<script type="text/javascript" src="./assets/js/carousel.js"></script>
 
   <!-- CONTACT  -->
 
@@ -168,10 +293,10 @@
           <p><i class="fas fa-map-marker-alt"></i>12 rue Amiral Courbet 76600 Le Havre</p>
         </div>
         <div class="tel">
-          <p><i class="fas fa-mobile-alt"></i> 06.41.36.70.23</p>
+          <a href="tel:0641367023"><i class="fas fa-mobile-alt"></i> 06.41.36.70.23</a>
         </div>
         <div class="messenger">
-          <p><i class="fab fa-facebook-messenger checked"></i> m.me/462948057486858</p>
+          <a href="m.me/462948057486858"><i class="fab fa-facebook-messenger checked"></i> m.me/462948057486858</a>
         </div>
         <div class="hours">
           <p class="open">Horaires d'ouverture</p>
@@ -215,38 +340,37 @@
               <p class="descriptiontext">Delly's Bar à Couscous est un restaurant atypique sur les bordures des quais du Havre. <br> Venez profiter d'une expérience riche en notre compagnie, plaisir garanti !</p>
             </div>
             <div id="footercol2">
-         
-              <h6>Navigation :</h6>
-              <ul class="footer-links">s
-                <li><a href="#home">Accueil</a></li>
+            <h6>Navigation :</h6>
+              <ul class="footer-links">
+                <li><a href="#container">Accueil</a></li>
                 <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#carousel__slide1">Menu</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#carou">Menu</a></li>
+                <li><a href="#contact">Réservation</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
              <div id="footercol3">
               <h6>Liens utiles : </h6>
               <ul class="footer-links">
-                <li><a href="https://deliveroo.fr/fr/menu/le-havre/le-havre-arcole-brindeau-valle-bereult/dellys-bar-a-couscous">Deliveroo</a></li>
-                <li><a href="https://www.pleaseapp.com/#/offers/6903-dellys-bar-a-couscous">Please</a></li>
-                <li><a href="https://www.ubereats.com/fr/rouen/food-delivery/dellys-bar-a-couscous/kyNbP-aoTV6nq87yhORfeQ">Uber Eats</a></li>
+                <li><a href="https://deliveroo.fr/fr/menu/le-havre/le-havre-arcole-brindeau-valle-bereult/dellys-bar-a-couscous" target="blank">Deliveroo</a></li>
+                <li><a href="https://www.pleaseapp.com/#/offers/6903-dellys-bar-a-couscous" target="blank">Please</a></li>
+                <li><a href="https://www.ubereats.com/fr/rouen/food-delivery/dellys-bar-a-couscous/kyNbP-aoTV6nq87yhORfeQ" target="blank">Uber Eats</a></li>
               </ul>
             </div>
             </div>
         <div class="container">
               <p class="copyright-text">Exercice dans le cadre d'une formation à LaManu par Yves-Marie Drouard, Sulian Gouard, Pauline Desert et Tristan Da Costa Pinto</a>.
-              <p class="legals"><a href="legal.html">Mentions légales</a></p>
+              <p class="legals"><a href="legal.html" target="blank">Mentions légales</a></p>
               </p>
             </div>
               <ul class="social-icons">
-                <li><a class="facebook" href="https://www.facebook.com/pages/category/Restaurant/Dellys-Bar-%C3%A0-Couscous-462948057486858/"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="instagram" href="https://gramho.com/location/dellys-bar-%C3%A0-couscous/462948057486858"><i class="fa fa-instagram"></i></a></li>   
+                <li><a class="facebook" href="https://www.facebook.com/pages/category/Restaurant/Dellys-Bar-%C3%A0-Couscous-462948057486858/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="instagram" href="https://gramho.com/location/dellys-bar-%C3%A0-couscous/462948057486858" target="blank"><i class="fa fa-instagram"></i></a></li>   
               </ul>
             </div>
           </div>
         </div>
+        
     </footer>
 </body>
 
