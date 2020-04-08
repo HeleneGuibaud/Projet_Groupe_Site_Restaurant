@@ -614,3 +614,24 @@ footer{
 .mentions {
   margin: 3rem
 }
+
+@media (max-width:769px)
+{
+  #presentation {
+    height: 60vh;
+    display: flex;
+    width: 100%;
+  }
+  #left
+  {
+    display:block;
+    width: 100%
+  }
+  .right img, .left
+  {
+    display:block;
+    width: auto;
+    height: 30vh;
+    margin-top: 15vh;
+  }
+}

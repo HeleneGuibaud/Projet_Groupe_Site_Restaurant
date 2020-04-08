@@ -114,7 +114,7 @@ transition: transform 0.1s;
   font-family: "Lucida_Handwriting";
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1281px) {
   .carousel::before,
   .carousel::after,
   .carousel-prev,
