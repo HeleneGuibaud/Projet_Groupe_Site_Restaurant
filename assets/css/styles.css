@@ -608,3 +608,110 @@ footer{
 .mentions {
   margin: 3rem
 }
+
+@media (max-width:769px)
+{
+  #presentation {
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+  }
+  #left
+  {
+    display:block;
+    width: 100%
+  }
+  .right img, .left
+  {
+    display:block;
+    width: auto;
+    height: 30vh;
+    margin-top: 15vh;
+  }
+  #container {
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem 0.5rem;
+    line-height: 1.8rem;
+    /* margin-bottom: 10rem; */
+    /* position: fixed;*/
+  }
+  section#home {
+    grid-column: 3 / 6;
+    grid-row: 2;
+    text-align: left;
+    padding-top: 15vh;
+  }
+  section#home h1 {
+    font-family: "Lucida_Handwriting";
+    font-size: 3rem;
+    color: #E1A545;
+    text-align: center;
+}
+section#home h2 {
+  font-family: "Lucida_Handwriting";
+  font-size: 2rem;
+  margin-top: -2rem;
+  text-align: center;
+}
+.arabesque2, .arabesque, #icones {
+  display: none;
+}
+}
+@media (max-width:990px)
+{
+  #presentation {
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  #left
+  {
+    display:block;
+    width: 100%
+  }
+  .right img, .left
+  {
+
+    display: none;
+  }
+  #container {
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem 0.5rem;
+    line-height: 1.8rem;
+    /* margin-bottom: 10rem; */
+    /* position: fixed;*/
+  }
+  section#home {
+    grid-column: 3 / 6;
+    grid-row: 2;
+    text-align: left;
+    padding-top: 15vh;
+  }
+  section#home h1 {
+    font-family: "Lucida_Handwriting";
+    font-size: 3rem;
+    color: #E1A545;
+    text-align: center;
+}
+section#home h2 {
+  font-family: "Lucida_Handwriting";
+  font-size: 2rem;
+  margin-top: -2rem;
+  text-align: center;
+}
+.arabesque2, .arabesque, #icones {
+  display: none;
+}
+}
+
