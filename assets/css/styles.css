@@ -30,8 +30,7 @@ body {
   width: 100%;
   position: fixed;
   background-color: #37A1AF;
-  z-index: 1000;
-  opacity: ;
+  z-index: 2;
 }
 
 .nav>.nav-header {
@@ -151,7 +150,7 @@ section#home p {
   text-align: center;
 }
 
-img {
+img#first {
   width: 100%;
   height: auto;
   grid-column: 1 / span 2;
@@ -324,6 +323,16 @@ button {
   margin-right: 3rem;
   width: auto;
 }
+
+.arabesque3 {
+  width: 13.2vw;
+  transform: rotate(90deg);
+  position: relative;
+  float: left;
+  margin-left: -4.5rem;
+  margin-top: -9.1rem;
+}
+
 #left {
   height: 100vh;
   display: block;
@@ -331,6 +340,7 @@ button {
   float: left;
   padding-left: 15vw;
 }
+
 .pres {
   margin-left: 4vw;
   width: 40vw;
@@ -339,6 +349,7 @@ button {
   background-color: #ffffff;
   border-left: 1rem solid #37A1AF;
 }
+
 #presentation h3 {
   font-family: "Lucida_Handwriting";
   font-size: 2rem;
