@@ -30,8 +30,7 @@ body {
   width: 100%;
   position: fixed;
   background-color: #37A1AF;
-  z-index: 1000;
-  opacity: ;
+  z-index: 2;
 }
 
 .nav>.nav-header {
@@ -151,7 +150,7 @@ section#home p {
   text-align: center;
 }
 
-img {
+img#first {
   width: 100%;
   height: auto;
   grid-column: 1 / span 2;
