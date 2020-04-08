@@ -42,7 +42,7 @@ main {
 .carousel::after {
   content: '';
   z-index: 1;
-  background-color: #333;
+  background-color: #37A1AF;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;
@@ -151,4 +151,16 @@ main {
     height: 100%;
     scroll-snap-align: center;
   }
+}
+
+.carousel-navigation-button:hover {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff;
+  background-clip: content-box;
+  border: 0.25rem solid #37A1AF;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
 }
