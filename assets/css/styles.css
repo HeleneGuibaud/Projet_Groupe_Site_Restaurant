@@ -367,6 +367,8 @@ button {
 
 /*////////////////// FOOTER //////////////////*/
 
+/* FOOTER */
+
 #footerflexbox{
   display: inline-flex;
   justify-content: space-around;
