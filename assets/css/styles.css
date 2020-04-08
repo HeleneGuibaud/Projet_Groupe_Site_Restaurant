@@ -215,12 +215,13 @@ img {
   /* margin-top: 2rem; */
 }
 #contact h3 {
-  font-family: "Lucida_Handwriting";
-  font-size: 2rem;
-  color: #ffffff;
-  margin-left: 5vw;
-  margin-bottom: 2rem;
-}
+    font-family: "Lucida_Handwriting";
+    font-size: 2rem;
+    color: #37A1AF;
+    margin-left: 5vw;
+    margin-bottom: 2rem;
+  }
+
 .co {
   margin: auto;
   margin-right: 3rem;
@@ -266,10 +267,10 @@ form {
 label {
   display: block
 }
-#contact .title {
+/* #contact .title {
   background-color: #37A1AF;
   width: 35vw;
-}
+} */
 .open {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -345,6 +346,14 @@ button {
   font-family: 'Open Sans', sans-serif;
 }
 
+main h1 {
+  font-family: "Lucida_Handwriting";
+  font-size: 2rem;
+  color: #37A1AF;
+  margin-left: 5vw;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 /*////////////////// NEWSLETTER //////////////////*/
 
 #delivery {

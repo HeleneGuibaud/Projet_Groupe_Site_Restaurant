@@ -107,3 +107,9 @@ transition: transform 0.1s;
 .carousel-slide ul{
   padding-left: calc(560px + 3rem);
 }
+
+.menutitle{
+  text-align: left;
+  color: #E1A545;
+  font-family: "Lucida_Handwriting";
+}
