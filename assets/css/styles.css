@@ -1,0 +1,576 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lucida_Handwriting";
+  src: url('../font/LucidaHandwriting.TTF')
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem 0.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 10rem;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lucida_Handwriting';
+}
+
+/*////////////////// MISE EN PLACE NAVBAR //////////////////*/
+
+.nav {
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  background-color: #37A1AF;
+  z-index: 1000;
+  opacity: ;
+}
+
+.nav>.nav-header {
+  display: flex;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 15px 20px 13px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav>.nav-links>a:hover {
+  font-weight: bold;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+/*////////////////// NAVBAR RESPONSIVE //////////////////*/
+
+@media (max-width:950px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: #37A1AF
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    border-top: 2px solid #fff;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #37A1AF;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(62vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/*////////////////// SECTION-ACCUEIL //////////////////*/
+
+section#home {
+  grid-column: 3 / 6;
+  grid-row: 2;
+  text-align: left;
+
+}
+
+section#home h1 {
+  font-family: "Lucida_Handwriting";
+  font-size: 6rem;
+  color: #E1A545;
+  text-align: center;
+
+}
+
+section#home h2 {
+  font-family: "Lucida_Handwriting";
+  font-size: 2rem;
+  margin-top: -2rem;
+  text-align: center;
+
+}
+
+section#home p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.arabesque {
+  width: 15vw;
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  margin-top: -1rem;
+  margin-left: 1.5rem;
+}
+.arabesque2 {
+  width: 15vw;
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  margin-top: 5rem;
+  margin-bottom: -10rem;
+  transform: rotate(180deg);
+  margin-left: 1.5rem
+}
+
+.logo {
+  width: 12vw;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  margin-top: 4em;
+  margin-left: 2rem;
+  transform: rotate(-25deg);
+}
+
+#icones {
+  grid-column: 5 / 6;
+  grid-row: 2;
+  text-align: right;
+  margin-top: -2.5rem;
+  padding-right: 3rem;
+  transform: rotate(90deg);
+}
+
+#icones i {
+  margin: 1rem;
+  color: #E1A545;
+  
+}
+
+/*////////////////// CONTACT //////////////////*/
+
+#contact {
+  margin-top: 5vh;
+  height: 100%;
+  margin-bottom: 5vh;
+  display: block;
+}
+.map iframe {
+  width: 70vw;
+  height: 40vh;
+  display: flex;
+  margin: auto;
+  /* margin-top: 2rem; */
+}
+#contact h3 {
+  font-family: "Lucida_Handwriting";
+  font-size: 2rem;
+  color: #ffffff;
+  margin-left: 5vw;
+  margin-bottom: 2rem;
+}
+.co {
+  margin: auto;
+  margin-right: 3rem;
+}
+.reservation {
+  margin: auto;
+  margin-left: 3rem;
+}
+.top {
+  width: 99vw;
+  display: inline-flex;
+  margin: auto;
+}
+.adress,
+.tel,
+.messenger,
+.hours {
+  margin: 1rem;
+}
+#contact img {
+  height: 4vh;
+  margin-right: 2vw;
+}
+#contact p {
+  font-family: 'Open Sans', sans-serif;
+}
+form {
+  padding: 1rem 3rem 1rem 3rem;
+  border: 1px solid #E1A545;
+  border-bottom: none;
+}
+#contact li {
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1rem;
+}
+#reservationForm {
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+label {
+  display: block
+}
+#contact .title {
+  background-color: #37A1AF;
+  width: 35vw;
+}
+.open {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #E1A545;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+p#time {
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+}
+p#day {
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+}
+.fa, .fas, .fab {
+  font-weight: 900;
+  color: #37A1AF;
+  width: 2rem;
+  margin: auto;
+}
+button {
+  margin: 1rem;
+  color: white;
+  border: none;
+  background-color: #37A1AF;
+  padding: 0.5rem;
+}
+
+/*////////////////// PRESENTATION //////////////////*/
+
+#presentation {
+  padding-top: 10vh;
+  height: 90vh;
+  margin-bottom: 5vh;
+  display: block;
+}
+#presentation .title  {
+  margin-left: 10vw;
+  margin-top: 15%;
+}
+.right img,
+.right {
+  height: 70vh;
+  display: block;
+  float: right;
+  margin-right: 3rem;
+  width: auto;
+}
+#left {
+  height: 100vh;
+  display: block;
+  max-width: 60%;
+  float: left;
+  padding-left: 15vw;
+}
+.pres {
+  margin-left: 4vw;
+  width: 40vw;
+  margin-top: 9vh;
+  padding-left: 2rem;
+  background-color: #ffffff;
+  border-left: 1rem solid #37A1AF;
+}
+#presentation h3 {
+  font-family: "Lucida_Handwriting";
+  font-size: 2rem;
+  color: #37A1AF;
+  margin-left: 5vw;
+  margin-bottom: 2rem;
+}
+#presentation p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*////////////////// NEWSLETTER //////////////////*/
+
+#delivery {
+  font-size: 2rem;
+}
+
+#deliveryPic {
+  float: left;
+  width: auto;
+}
+
+#order {
+  font-size: 1.5rem;
+}
+
+.deliveryForm {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*////////////////// FOOTER //////////////////*/
+
+/* FOOTER */
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#grid{
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+  grid-row: 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+ }
+ #footercol1{
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   margin-left: 1rem;
+ }
+ #footercol2{
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 2;
+   grid-column-end: 3;
+ }
+ #footercol3{
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 3;
+   grid-column-end: 4;
+   width: 100%;
+ }
+
+.site-footer
+{
+  background-color:#37A1AF;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color: white; 
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  margin-bottom: 0;
+}
+.site-footer a
+{
+  color:white;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color: white;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline;
+}
+.site-footer .social-icons
+{
+  text-align:center;
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin: 1rem 0;
+  color: white;
+  border-top: 0.1rem solid white;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color: white;
+}
+.social-icons a.instagram:hover
+{
+  background-color:white;
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.descriptiontext
+{
+  margin:0;
+  color: white;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.legals{
+  text-align: center;
+  text-decoration: none;
+}
