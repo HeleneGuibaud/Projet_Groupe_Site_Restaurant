@@ -15,8 +15,7 @@ body {
 }
 
 /*////////////////// SECTION-ACCUEIL //////////////////*/
-
-.logo {
+                                                                                                                                            .logo {
   width: 9vw;
   position: absolute;
   margin-top: 0.8em;
@@ -41,18 +40,38 @@ body {
 }
 
 
-#icones i{
-  color: #E1A545;
-  padding-left: 1em;
-  font-size: 2em;
+
+.icone {
+  position: absolute;
+  margin-left: 84%;
+  
+
 }
 
+.icone i{
+  padding-top: 2rem;
+  transform: rotate(270deg);
+  color: #E1A545;
+  font-size: 0.8em;
+  
+}
+
+
+@media screen and (min-width:994px){
+ 
+  
+  .icone{margin-left: 92%;}
+  .icone i{padding-top: 3.3em;font-size: 2.7em;}
+  
+  }
 
 @media screen and (min-width:700px) and (max-width:994px){
   #dellysh1{font-size:3.5rem ;}
   #barh2{font-size:1.9rem;}
   #drive{font-size:0.8em;}
-  #icones i{font-size: 1.5em;}
+  .icone{margin-left: 86%;}
+  .icone i{font-size: 1.5em; margin-top: 2.5em;}
+  
   
   }
 
@@ -60,7 +79,9 @@ body {
   #dellysh1{font-size:2.8em ;}
   #barh2{font-size:1.5em;}
   #drive{font-size:0.7em;}
-  #icones i{font-size: 1.4em;}
+  .icone i{margin-top: 2em;font-size: 1.1em;}
+  
+     
 }
 
 
@@ -68,7 +89,8 @@ body {
   #dellysh1{font-size:2.5em ;}
   #barh2{font-size:1.2em;}
   #drive{font-size:0.6em;}
-  #icones i{font-size: 1em;}
+  .icone i{padding-top: 1em; font-size: 1em;}
+  
   
 }
 
@@ -76,9 +98,9 @@ body {
   #dellysh1{font-size:1.7em ;}
   #barh2{font-size:1rem;}
   #drive{font-size:0.6em;}
-  #icones i{font-size: 0.8em;}
-      
+  .icone i{font-size: 0.7em;}  
 }
+
 /*////////////////// Fin SECTION-ACCUEIL //////////////////*/
 
 /*////////////////// Présentation //////////////////*/
