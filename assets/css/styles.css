@@ -14,106 +14,8 @@ body {
   font-family: 'Lucida_Handwriting';
 }
 
-/*////////////////// MISE EN PLACE NAVBAR //////////////////*/
-
-.nav {
-  height: 7vh;
-  width: 100%;
-  position: fixed;
-  background-color: #37A1AF;
-  z-index: 2;
-}
-
-.nav>.nav-header {
-  display: flex;
-}
-
-.nav>.nav-btn {
-  display: none;
-}
-
-.nav>.nav-links {
-  display: inline;
-  float: right;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.nav>.nav-links>a {
-  display: inline-block;
-  padding: 15px 20px 13px 10px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav>.nav-links>a:hover {
-  font-weight: bold;
-}
-
-.nav>#nav-check {
-  display: none;
-}
-
-/*////////////////// NAVBAR RESPONSIVE //////////////////*/
-
-@media (max-width:950px) {
-  .nav>.nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-
-  .nav>.nav-btn>label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-
-  .nav #nav-check:checked~.nav-btn>label {
-    background-color: #37A1AF
-  }
-
-  .nav>.nav-btn>label>span {
-    display: block;
-    width: 25px;
-    height: 5px;
-    border-top: 2px solid #fff;
-  }
-
-  .nav>.nav-links {
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 100%;
-    background-color: #37A1AF;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-
-  .nav>.nav-links>a {
-    display: block;
-    width: 100%;
-  }
-
-  .nav>#nav-check:not(:checked)~.nav-links {
-    height: 0px;
-  }
-
-  .nav>#nav-check:checked~.nav-links {
-    height: calc(62vh - 50px);
-    overflow-y: auto;
-  }
-}
-
-  
 /*////////////////// SECTION-ACCUEIL //////////////////*/
-
-.logo {
+                                                                                                                                            .logo {
   width: 9vw;
   position: absolute;
   margin-top: 0.8em;
@@ -196,9 +98,7 @@ body {
   #dellysh1{font-size:1.7em ;}
   #barh2{font-size:1rem;}
   #drive{font-size:0.6em;}
-  .icone i{font-size: 0.7em;}
- 
-      
+  .icone i{font-size: 0.7em;}  
 }
 
 /*////////////////// Fin SECTION-ACCUEIL //////////////////*/
