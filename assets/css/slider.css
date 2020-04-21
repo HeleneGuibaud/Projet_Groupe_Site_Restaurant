@@ -16,7 +16,7 @@ main {
   margin-top: 2em;
   padding-top: 1em;
 }
-#title-plate
+.title-plate
 {
   text-align: center;
   color: #37A1AF;
@@ -26,7 +26,7 @@ main {
   margin-bottom: 3em;
 }
 
-#descr-plate
+.descr-plate
 {
   text-align: center;
   color: #E1A545;
@@ -145,7 +145,7 @@ main {
   font-family: "Lucida_Handwriting";
 }
 @media screen and (max-width:500px) {
-  #img-plate{width: 90%;}
+  .img-plate{width: 90%;}
 }
 @media screen and (max-width:700px)
 
