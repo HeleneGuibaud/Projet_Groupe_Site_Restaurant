@@ -145,7 +145,13 @@ main {
   font-family: "Lucida_Handwriting";
 }
 @media screen and (max-width:500px) {
-  .img-plate{width: 90%;}
+  #img-plate1{width: 90%;}
+  #img-plate2{width: 90%;}
+  #img-plate3{width: 90%;}
+  #img-plate4{width: 90%;}
+  #img-plate5{width: 90%;}
+  #img-plate6{width: 90%;}
+
 }
 @media screen and (max-width:700px)
 
