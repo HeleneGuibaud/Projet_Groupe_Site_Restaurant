@@ -3,7 +3,37 @@ main {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
 }
+#carou-menu{
+  text-align: center;
+  color: #37A1AF;
+  font-family: "Lucida_Handwriting";
+  font-size: 2em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+ 
+}
+.menutitle{
+  margin-top: 2em;
+  padding-top: 1em;
+}
+.title-plate
+{
+  text-align: center;
+  color: #37A1AF;
+  font-family: "Lucida_Handwriting";
+  font-size: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
 
+.descr-plate
+{
+  text-align: center;
+  color: #E1A545;
+  font-family: "Lucida_Handwriting";
+  font-size: 1em;
+  margin-top: 0;
+}
 .carousel-snapper {
   position: absolute;
   top: 0;
@@ -117,17 +147,17 @@ main {
 }
 
 .menutitle {
-  text-align: left;
+  text-align: center;
   color: #E1A545;
   font-family: "Lucida_Handwriting";
   font-size: 1em;
 }
 
-@media screen and (max-width: 500px) {
-  #img-plate{
-    width: 100%;
-  }
+
+@media screen and (max-width:500px) {
+  #img-plate , #img-plate1 , #img-plate2 , #img-plate3 , #img-plate4 , #img-plate5{width: 100%;}
 }
+
 
 @media screen and (max-width: 1546px) {
 
