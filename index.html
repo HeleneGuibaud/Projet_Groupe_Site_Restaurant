@@ -50,7 +50,7 @@
     </nav>
 
 
-    <!-------- texte -------->
+    <!-------- Acceuil -------->
 
     <div class="container mt-5">
         <div id="home">
@@ -67,7 +67,7 @@
                
             </div>
 
-            <div class="col-6 mt-5 ">
+            <div class="arabesques col-6 mt-5 ">
 
                 <div class="ara col-12">
 
@@ -104,6 +104,7 @@
         </div>
     </div>
     </div>
+        <!--Presentation-->
 
     <div class="container mt-4">
         <div id="pres">
@@ -133,12 +134,12 @@
 
 <!----- CAROUSEL ------>
 <main id="carou">
-    <h1>Menu</h1>
+    <h2 id="carou-menu">Menu</h2>
     <div class="carousel">
       <section class="carousel-viewport">
         <article id="carousel-slide-1" class="carousel-slide">
           <h2 class="menutitle">Couscous Royal</h2>
-          <img src="./assets/img/couscousroyal.jpg" title="Le bon couscous royal" />
+          <img id="img-plate" src="./assets/img/couscousroyal.jpg" title="Le bon couscous royal" />
           <div>
             <h3>Description:</h3>
             <p>Un plat riche en saveur !</p>
@@ -320,60 +321,63 @@
     </section>
 
     </section>
-    <!-- Site footer -->
-
-    <footer class="site-footer">
-        <div id="grid">
-            <div id="footercol1">
-                <h6>A propos de nous :</h6>
-                <p class="descriptiontext">Delly's Bar à Couscous est un restaurant atypique sur les bordures des quais
-                    du
-                    Havre. <br> Venez profiter d'une expérience riche en notre compagnie, plaisir garanti !</p>
-                <h6 id="newsletter">NEWSLETTER :</h6>
-                <input type="email" id="mail" name="mail" placeholder="EX: XYZ@ABC.COM" />
-                <button type="submit">S'inscrire</button>
-            </div>
-            <div id="footercol2">
-                <h6>Navigation :</h6>
-                <ul class="footer-links">
-                    <li><a href="#container">Accueil</a></li>
-                    <li><a href="#presentation">Présentation</a></li>
-                    <li><a href="#carou">Menu</a></li>
-                    <li><a href="#contact">Réservation</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div id="footercol3">
-                <h6>Liens utiles : </h6>
-                <ul class="footer-links">
-                    <li><a href="https://deliveroo.fr/fr/menu/le-havre/le-havre-arcole-brindeau-valle-bereult/dellys-bar-a-couscous"
-                            target="_blank">Deliveroo</a></li>
-                    <li><a href="https://www.pleaseapp.com/#/offers/6903-dellys-bar-a-couscous"
-                            target="blank">Please</a></li>
-                    <li><a href="https://www.ubereats.com/fr/rouen/food-delivery/dellys-bar-a-couscous/kyNbP-aoTV6nq87yhORfeQ"
-                            target="_blank">Uber Eats</a></li>
-                </ul>
-            </div>
-        </div>
+    <!-- footer -->
+    <footer>
         <div class="container">
-            <p class="copyright-text">Exercice dans le cadre d'une formation à LaManu par Yves-Marie Drouard, Sulian
-                Gouard,
-                Pauline Desert et Tristan Da Costa Pinto</a>.
-                <p class="legals"><a href="legal.html" target="blank">Mentions légales</a></p>
-            </p>
-        </div>
-        <ul class="social-icons">
-            <li><a class="facebook"
-                    href="https://www.facebook.com/pages/category/Restaurant/Dellys-Bar-%C3%A0-Couscous-462948057486858/"
-                    target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="instagram" href="https://gramho.com/location/dellys-bar-%C3%A0-couscous/462948057486858"
-                    target="_blank"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-        </div>
-        </div>
-        </div>
+            <div class="row">
+                <div class="col bg-info text-white">
+                    <div class="row">
+                        <div class="col-7 ">
+                            <div id="footercol1 ">
+                            <h6>A propos de nous :</h6>
+                            <p class="descriptiontext">Delly's Bar à Couscous est un restaurant atypique sur les bordures des quais
+                                du
+                                Havre. <br> Venez profiter d'une expérience riche en notre compagnie, plaisir garanti !</p>
+                            
+                        </div>
+                    </div>
+                    
+                        <div class="col-5">
+                            <div id="footer-link">
+                                <h6>Liens utiles : </h6>
+                                <ul class="footer-links">
+                                    <li><a href="https://deliveroo.fr/fr/menu/le-havre/le-havre-arcole-brindeau-valle-bereult/dellys-bar-a-couscous"
+                                            target="_blank">Deliveroo</a></li>
+                                    <li><a href="https://www.pleaseapp.com/#/offers/6903-dellys-bar-a-couscous"
+                                            target="blank">Please</a></li>
+                                    <li><a href="https://www.ubereats.com/fr/rouen/food-delivery/dellys-bar-a-couscous/kyNbP-aoTV6nq87yhORfeQ"
+                                            target="_blank">Uber Eats</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <div class="col-12 text-center">
+                            <h6 id="newsletter">NEWSLETTER :</h6>
+                                <input type="email" id="mail" name="mail" placeholder="EX: XYZ@ABC.COM" />
+                                <button type="button" class="btn btn-outline-light">S'inscrire</button>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <p class="copyright-text text-center">Exercice dans le cadre d'une formation à LaManu par Yves-Marie Drouard, Sulian
+                                Gouard,
+                                Pauline Desert et Tristan Da Costa Pinto.<br>Modifié et rendu responsive par Hélène Guibaud, Clément Sabé et Kevyn Amaral. </a>.
+                                <p class="legals"><a href="legal.html" target="blank">Mentions légales</a>
+                            
+                            <a class="facebook" href="https://www.facebook.com/pages/category/Restaurant/Dellys-Bar-%C3%A0-Couscous-462948057486858/"
+                            target="_blank"><i class="fa fa-facebook ml-1"></i></a>
+
+                            <a class="instagram" href="https://gramho.com/location/dellys-bar-%C3%A0-couscous/462948057486858"
+                            target="_blank"><i class="fa fa-instagram ml-1"></i></a>
+                        </p>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+   
     <script src="assets/libs/js/jquery-3.4.1.min.js"></script>
     <script src="assets/libs/js/bootstrap.bundle.min.js"></script>
 

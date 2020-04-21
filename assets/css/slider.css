@@ -109,10 +109,24 @@ main {
   padding-left: calc(560px + 3rem);
 }
 
+#carou-menu{
+  text-align: center;
+  color: #37A1AF;
+  font-family: "Lucida_Handwriting";
+  font-size: 2em;
+}
+
 .menutitle {
   text-align: left;
   color: #E1A545;
   font-family: "Lucida_Handwriting";
+  font-size: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  #img-plate{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1546px) {
