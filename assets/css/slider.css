@@ -155,7 +155,13 @@ main {
 
 
 @media screen and (max-width:500px) {
-  #img-plate , #img-plate1 , #img-plate2 , #img-plate3 , #img-plate4 , #img-plate5{width: 100%;}
+  #img-plate1{width: 90%;}
+  #img-plate2{width: 90%;}
+  #img-plate3{width: 90%;}
+  #img-plate4{width: 90%;}
+  #img-plate5{width: 90%;}
+  #img-plate6{width: 90%;}
+
 }
 
 
