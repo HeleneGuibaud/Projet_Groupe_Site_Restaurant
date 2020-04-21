@@ -187,7 +187,8 @@ html ,body {
 .card{width:30%;}
 }
 
-
+/*navbar*/
+.navbar{font-family: "Lucida_Handwriting";}
 /*////////////////// FOOTER //////////////////*/
 footer {
  font-family:'Open Sans', sans-serif;
